@@ -1,0 +1,149 @@
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--Very-dark-blue: hsl(217, 54%, 11%);
+--Very-dark-blue2: hsl(216, 50%, 16%);
+--Very-dark-blue3: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+--shadow: hsl(215, 58%, 10%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+}
+
+.card{
+    width: 320px;
+    height: auto;
+    background-color: var(--Very-dark-blue2);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 0 40px 0 10px var(--shadow);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__img{
+    width: 100%;
+    height: 280px;
+    display: block;
+    position: relative;
+}
+
+.card__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.card__overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: hsla(178, 100%, 50%, 0.448);
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.card__img:hover .card__overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card__title{
+    font-weight: 600;
+    color: var(--White);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+.card__title:hover{
+    color: var(--Cyan);
+}
+
+.card__paragraph{
+    font-weight: 300;
+    color: var(--Soft-blue);
+    text-align: left;
+    margin-top: 15px;
+}
+
+.card__data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card__money{
+    display: flex;
+    gap: 4px;
+}
+
+.card__eth{
+    color: var(--Cyan);
+}
+
+.card__info{
+    display: flex;
+}
+
+.card__days{
+    color: var(--Soft-blue);
+}
+
+
+.card__credential{
+    padding-top: 15px;
+    border-top: 1px solid var(--Soft-blue);
+    display: flex;
+    gap: 10px;
+}
+
+.card__person{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.card__creator{
+    font-weight: 300;
+    color: var(--Soft-blue);
+    margin: 10px 0 0 0;
+}
+
+.card__credit{
+    font-weight: 300;
+    color: var(--White);
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.card__credit:hover{
+    color: var(--Cyan);
+}
+
+
