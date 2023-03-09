@@ -93,14 +93,12 @@ body{
 
 .card__data{
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
 .card__money{
     display: flex;
-    justify-content: left;
-    gap: 4px;
 }
 
 .card__eth{
