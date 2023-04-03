@@ -4,7 +4,7 @@ Este proyecto ha sido creado como reto de Frontend Mentor. Creado con HTML, CSS 
 ## Autor 
 **Cristian Barrios**
 
-* [LinkedIn](www.linkedin.com/in/cristianbarrios983)
+* [LinkedIn](https://www.linkedin.com/in/cristianbarrios983/)
 
 ## Ver ejemplo en vivo
 
